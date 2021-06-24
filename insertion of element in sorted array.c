@@ -18,13 +18,14 @@ void main(){
     {
         if (arr[i]>value)
         {
-            for (int j = n-1; j <= i; j--)
+            for (int j = n-1; j >= i; j--)
             {
                 arr[j+1]=arr[j];
+            }
 
                 arr[i]=value;
                 break;
-            }
+
 
         }
     }
